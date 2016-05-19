@@ -1,0 +1,109 @@
+`timescale 1ns / 100ps
+
+module tb_eop_detect();
+    // Define parameters
+    // basic test bench parameters
+    localparam    CLK_PERIOD    = 2.5;
+    localparam    CHECK_DELAY = 1; // Check 1ns after the rising edge to allow for propagation delay
+        localparam  NUM_CNT_BITS = 4;
+
+    reg tb_clk;
+    reg tb_n_rst;
+    reg tb_d_plus;
+    reg tb_d_minus;
+    reg tb_eop_output;
+    
+    eop_detect DUT
+    (
+        .clk(tb_clk);
+        .n_rst(tb_n_rst);
+        .eop(tb_eop_output);
+    )
+
+    always
+    begin
+        tb_clk = 1'b0;
+        #(CLK_PERIOD/2.0);
+        tb_clk = 1'b1;
+        #(CLK_PERIOD/2.0);
+    end
+
+
+
+    inital
+    begin
+    //------------------------------------------------------------
+         //TEST CASE 1
+                testcase = 1;
+         tb_n_rst = 1'b1;        
+                
+            @(posedge tb_clk); 
+
+        
+        //send in both ones
+        tb_d_plus = 1;
+        tb_d_minus = 1;
+        @(posedge tb_clk); 
+
+               #(CHECK_DELAY);
+            if( (tb_eop_output == 0 )
+                    $info("Test Case 1: Passed");
+            else 
+                    $error("Test Case 1: FAILED");
+                
+//------------------------------------------------------------
+         //TEST CASE 2
+                testcase = 1;
+         tb_n_rst = 1'b1;        
+                
+            @(posedge tb_clk); 
+
+        
+        //send in both ones
+        tb_d_plus = 1;
+        tb_d_minus = 0;
+        @(posedge tb_clk); 
+
+               #(CHECK_DELAY);
+            if( (tb_eop_output == 0 )
+                    $info("Test Case 2: Passed");
+            else 
+                    $error("Test Case 2: FAILED");
+            
+//------------------------------------------------------------
+         //TEST CASE 3
+                testcase = 1;
+         tb_n_rst = 1'b1;        
+                
+            @(posedge tb_clk); 
+
+        
+        //send in both ones
+        tb_d_plus = 0;
+        tb_d_minus = 1;
+        @(posedge tb_clk); 
+
+               #(CHECK_DELAY);
+            if( (tb_eop_output == 0 )
+                    $info("Test Case 3: Passed");
+            else 
+                    $error("Test Case 3: FAILED");
+
+//------------------------------------------------------------
+         //TEST CASE 4
+                testcase = 1;
+         tb_n_rst = 1'b1;        
+                
+            @(posedge tb_clk); 
+
+        
+        //send in both ones
+        tb_d_plus = 0;
+        tb_d_minus = 0;
+        @(posedge tb_clk); 
+
+               #(CHECK_DELAY);
+            if( (tb_eop_output == 1 )
+                    $info("Test Case 3: Passed");
+            else 
+                    $error("Test Case 3: FAILED");

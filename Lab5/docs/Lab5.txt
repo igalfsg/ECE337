@@ -1,0 +1,36 @@
+Igal Flegmann
+
+Teammate: Arthur Huang
+
+1:
+    This team member made a sincere effort to figure out the
+    design and testing so as to be able to contribute to the team effort.   
+   
+    Arthur : 5    Me: 5
+
+
+    This team member was respectful and considerate of other team members.
+
+    Arthur: 5 Me: 5
+
+    This team member fulfilled all promised or commitments to team members including
+    those listed in ground rules 1-5
+
+    Arthur: 5 Me: 5
+
+    You were able to achieve or learn more with this partner than you would have without
+   
+    Arthur: 5 Me: 5
+
+2:
+we met outside and inside the lab to get the see how we would approach the lab and to do the drawing. eventhough we discussed how to do it we each did our own code and diagrams
+
+3:we met during the weekend and every night at the lab. we always keep contact on our phone since we take many classes together.
+
+4:  Arthur and I work really work together because usually when i dont get something he gets it and the opposite is true so we help each other until we both know the material.
+ 
+5:  Arthur Helped me understand the complimentary modules such ass the fir_filter, and counter. 
+
+6: I didn't use another test bench, I was able to submit after debugging an issue, and received a good score. 
+
+My code didn't work so I cant answer the image questions

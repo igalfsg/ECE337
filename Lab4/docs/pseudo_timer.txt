@@ -1,0 +1,15 @@
+
+
+alwaysFF 
+begin
+	if n_rst == 0
+	  reset stuff
+end
+
+if enable_timer:
+   packet done = 0
+   for i=0 i < 9
+        shift_strobe = 0
+   	do flex counter
+	   shift_Strobe = 1
+   packet done = 1

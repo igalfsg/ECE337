@@ -1,0 +1,25 @@
+﻿Igal Flegmann
+team member: Arthur Huang
+
+
+This team member made a sincere effort (to the best that you can te
+ll) to figure out the design and testing so as to be able to contribute to the team effort.
+Arthur :  5               Igal:  5
+
+This team member was respectful and considerate of other team members.
+Arthur :  5               Igal:  5
+This team member fulfilled all promised or commitments to team members.
+Arthur :  5               Igal:  5
+
+You were able to achieve or learn more with this partner than you would have without
+Arthur :  5               Igal:  5
+
+2)Arthur came up with how to do timer.sv planning, and then we worked together on the other modules I also cam up with how to do sr_9bit module. 
+
+3) We met once on the weekend and once a day during the week. We were also in continuous communication through SMS.
+
+4) we both worked together and brainstormed on all the modules and I was the one that came up with the design for sr_bit. Even though we brainstormed on the ideas we both coded our own stuff.
+
+5)Arthur came up with how to do timer.sv planning, and then we worked together on the other modules I also cam up with how to do sr_9bit module.  And we both brainstormed to get the design all the rest of the modules.
+
+6)I used my own testbech for testing my code. Which was the given test bench with a few added cases. 

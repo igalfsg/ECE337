@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Tue Apr 26 17:30:43 2016
+Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Full Version
+Revision Name : master_example
+Top-level Entity Name : master_example
+Family : Cyclone IV GX
+Total logic elements : 15,116
+    Total combinational functions : 10,836
+    Dedicated logic registers : 8,961
+Total registers : 8961
+Total pins : 197
+Total virtual pins : 0
+Total memory bits : 163,816
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 1
+Total GXB Receiver Channel PMA : 1
+Total GXB Transmitter Channel PCS : 1
+Total GXB Transmitter Channel PMA : 1
+Total PLLs : 2
